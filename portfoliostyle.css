@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #101920;
+}
+
+.header{
+position: relative;
+width: 100%;
+top: 0;
+left:0;
+display: flex;
+justify-content: space-between ;
+background: #ffe714;
+padding: 10px 0px;
+
+}
+
+.header li{
+    display: inline;
+    list-style-type: none;
+}
+
+
+.header.sticky{
+    background: #3a6cf4;
+    padding: 10px 200px;
+}
+
+.header.sticky .nav a:hover{
+    color: #000;
+}
+
+
+.logo{
+    font-size: 30px;
+    padding: 0px 10px;
+    color: #101920;
+    font-weight: 600;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: #db2777;
+    transition: 0.5s;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: #ffe714;
+    border-width: 10px;
+    padding: 250px 50px;
+  }
+
+
+.animatedtext{
+position: relative;
+height: 70px;
+overflow: hidden;
+}
+
+.animatedtext h3{
+    color: #ffe714 ;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.animatedtext h3:nth-child(1){
+    animation: text-move 10s infinite;
+
+}
+
+nav li{
+    padding: 5px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #101920;
+}
+.header nav{
+    text-align: center;
+    padding: 10px;
+
+}
+nav a{
+    text-decoration: none;
+    color: #101920;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+h1{
+    color: #fff;
+}
+
+.Greeting{
+    display: flex;
+    justify-content: flex-start;
+    padding: 250px 50px;
+
+}
+
+nav a:hover{
+    color: #db2777;
+    transition: 0.5s;
+
+}
+
+.Name span:hover {
+    color: #db2777;
+    transition: 0.5s;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.4s, box-shadow 0.4s;
+    position: relative;
+    border-radius: 20px;
+  }
+
+  /* Neon hover effect */
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s;
+    border-radius: 20px;
+  }
+
+  .button:hover {
+    background-color:  #ffe714;
+    box-shadow: 0 0 10px  #ffe714;
+  }
+  .button:hover::before {
+    opacity: 1;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: #ffe714;
+    border-width: 5px;
+  }
+
+.Picture{
+    width: 250px;
+    border: #ffe714;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 30px;
+}
+
+@keyframes text-move {
+    0%{
+        margin-top: 0;
+    }
+    50%{
+        margin-top: -70px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+.Icons{
+    margin-top: 50px;
+}
+.Icons a{
+      color: #fff;
+      font-size: 25px;
+      margin-right: 30px ;
+}
+
+.title{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-title{
+    position: relative;
+    color:#101920;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 60px;
+    padding-top: 20px;
+}
+
+.section-title :before{
+content: '';
+position: absolute;
+top: 50px;
+left: 50%;
+width:140px;
+height: 4px;;
+background: #fff;
+transform: translateX(-50%);
+}
+
+
+
+
+.section-title :after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.about{
+    background-color:#ffe714;
+}
+.about .about-content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    color:#101920;
+
+}
+
+.about .about-content .left-col{
+position:relative;
+width: 25%;
+}
+.about .about-content .right-col{
+    position:relative;
+    width: 50%;
+}
+
+.about .about-content .left-col .img-card{
+    position: relative;
+    width:100%;
+    min-height: 450px;
+}
+
+
+.about .about-content .left-col .img-card img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.skills .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
